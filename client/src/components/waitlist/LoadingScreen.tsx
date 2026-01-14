@@ -59,6 +59,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ isVisible, onCompl
                     {/* SVG Logo Container */}
                     <motion.div
                         className="relative z-10"
+                        style={{ background: 'transparent', border: 'none', boxShadow: 'none' }}
                         animate={animationComplete ? {
                             filter: [
                                 'drop-shadow(0 0 10px rgba(41,98,255,0.2))',
@@ -76,20 +77,26 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ isVisible, onCompl
                     >
                         <svg
                             viewBox="0 0 100 100"
-                            className="w-64 h-64 md:w-80 md:h-80 overflow-visible"
+                            className="w-64 h-64 md:w-80 md:h-80"
+                            style={{ 
+                                background: 'transparent', 
+                                border: 'none',
+                                overflow: 'visible',
+                                maxWidth: 'none'
+                            }}
                         >
                             <defs>
                                 <linearGradient id="intro-g1">
                                     <stop offset="0%" stopColor="#00F0FF" />
-                                    <stop offset="100%" stopColor="#2962FF" />
+                                    <stop offset="100%" stopColor="#0dc3ff" />
                                 </linearGradient>
                                 <linearGradient id="intro-g2">
-                                    <stop offset="0%" stopColor="#6366F1" />
-                                    <stop offset="100%" stopColor="#8B5CF6" />
+                                    <stop offset="0%" stopColor="#e24295ff" />
+                                    <stop offset="100%" stopColor="#c42878" />
                                 </linearGradient>
                                 <linearGradient id="intro-g3">
                                     <stop offset="0%" stopColor="#FFB800" />
-                                    <stop offset="100%" stopColor="#FF9100" />
+                                    <stop offset="100%" stopColor="#fa970c" />
                                 </linearGradient>
                             </defs>
 

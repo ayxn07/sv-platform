@@ -2057,8 +2057,7 @@ body {
     --colors--accent-color: #3898ec; /* Accent color for buttons and links */
     --colors--text-color: #ffffff; /* White text for readability */
     --colors--muted-text: #a0a4b8; /* Muted text for secondary elements */
-    --fonts--main-font: Inter, sans-serif; /* Main font for body text */
-    --fonts--heading-font: "DM Sans", sans-serif; /* Font for headings */
+
 }
   
   .w-commerce-commercecartwrapper {
@@ -3356,7 +3355,7 @@ body {
   
   body {
     background-color: var(--colors--page-color);
-    font-family: var(--fonts--main-font);
+
     color: #fff;
     font-size: 14px;
     line-height: 1.2;

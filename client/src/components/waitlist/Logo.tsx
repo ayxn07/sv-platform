@@ -82,15 +82,15 @@ export const OrbitalLogoSmall = ({ className = "" }: { className?: string }) => 
             <defs>
                 <linearGradient id="g1-small" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stopColor="#00F0FF" />
-                    <stop offset="100%" stopColor="#2962FF" />
+                    <stop offset="100%" stopColor="#0dc3ff" />
                 </linearGradient>
                 <linearGradient id="g2-small" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#6366F1" />
-                    <stop offset="100%" stopColor="#8B5CF6" />
+                    <stop offset="0%" stopColor="#e24295ff" />
+                    <stop offset="100%" stopColor="#c42878" />
                 </linearGradient>
                 <linearGradient id="g3-small" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stopColor="#FFB800" />
-                    <stop offset="100%" stopColor="#FF9100" />
+                    <stop offset="100%" stopColor="#fa970c" />
                 </linearGradient>
             </defs>
 

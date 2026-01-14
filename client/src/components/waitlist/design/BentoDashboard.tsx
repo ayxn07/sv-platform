@@ -365,7 +365,7 @@ export default function BentoDashboard({ queuePosition, totalUsers = 1000, refer
                         transition={{ duration: 3, repeat: Infinity }}
                     >
                         <Rocket className="w-4 h-4 text-purple-400" />
-                        Launch Target: March 1st, 2026
+                        Launch Target: March, 2026
                     </motion.p>
                 </motion.div>
 

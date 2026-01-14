@@ -11,7 +11,8 @@ import {
     Sparkles,
     ArrowRight,
     Rocket,
-    CheckCircle2
+    CheckCircle2,
+    ArrowLeft
 } from 'lucide-react';
 import { OrbitalLogoSmall } from './Logo';
 import { isUniversityEmail } from '../../utils/validation';
@@ -231,6 +232,20 @@ export default function EmailVerificationStyled({
 
             {/* Main verification screen */}
             <div className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 relative overflow-hidden bg-black cursor-auto">
+                {/* Back button */}
+                <motion.button
+                    onClick={() => navigate('/')}
+                    className="absolute top-6 left-6 flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-200 text-neutral-300 hover:text-white z-50"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.2 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    <ArrowLeft className="w-4 h-4" />
+                    <span className="text-sm font-medium">Back</span>
+                </motion.button>
+
                 {/* Gradient rings background */}
                 <GradientOrb />
 

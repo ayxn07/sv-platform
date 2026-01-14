@@ -313,7 +313,7 @@ export const QueueVisualization: React.FC<QueueVisualizationProps> = ({
             </div>
 
             {/* Raw Data Table */}
-            <motion.div
+            {/* <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9 }}
@@ -361,7 +361,6 @@ export const QueueVisualization: React.FC<QueueVisualizationProps> = ({
                 </div>
             </motion.div>
 
-            {/* Stats Grid */}
             <div className="grid grid-cols-3 gap-3 md:gap-4 relative z-10">
                 {[
                     { label: 'Your Position', value: currentPosition, prefix: '#', color: 'azure', icon: Crown },
@@ -389,7 +388,7 @@ export const QueueVisualization: React.FC<QueueVisualizationProps> = ({
                         </motion.div>
                     </Card3DWrapper>
                 ))}
-            </div>
+            </div> */}
 
             {/* Radar Visual Section - Commented Out */}
             {/* <div className="mb-6 relative z-10">
